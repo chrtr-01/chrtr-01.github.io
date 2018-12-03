@@ -1,4 +1,4 @@
- body{
+  body{
     margin:0px;
     font-family: HelveticaNeue-Medium,'Roboto';
     font-size: 20px;
@@ -67,6 +67,11 @@
     top:70px;
 
   }
+  .engine-title{
+    font-size: 18px;text-align:center;
+    position: relative;
+    top:70px;
+  }
   .apply-button{
     position: relative;
     text-align: center;
@@ -89,13 +94,7 @@
 
 
   p{
-        /* Help us to serve you: */
-    /* font-family: OpenSans;
-    font-size: 18px;
-    color: #5E5E5E;
-    letter-spacing: 0.75px;
-    text-align: center;
-    opacity: 0.92; */
+
     font-family: AvenirNext-Regular;
     font-size: 20px;
     color: #515151;
@@ -110,14 +109,7 @@
     top:0;
   }
   .navbar a{
-    /* font-family: Helvetica Neue;
-    font-weight: lighter;
-    letter-spacing: 0.2vw;
-    display: inline-block;
-    color: #130F0D;
-    text-align: center;
-    padding: 1.4vw 3.5vw;
-    text-decoration: none; */
+
     font-family: Roboto-light;
     font-weight: lighter;
     font-size: 18px;
@@ -135,8 +127,13 @@
     font-weight: bold;
 
   }
+
   /* .navbar a:hover{
     background-color: #FAFAFA;
+
+
+
+
   } */
 
 
@@ -243,28 +240,116 @@ input[type=submit]:hover {
 
 
 
-input[name=other-option]:focus{
+/* input[name=other-option]:focus{
       outline: none;
   }
   .center-button{
   text-align: center;
   margin-top: 30px;
-  }
+  } */
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  #logo{
+    width:140px;
+    height:100px;
 
+  }
+  .sub-title{
+    position: relative;
+    top:30px;
+
+  }
+  .apply-button{
+    position: relative;
+    text-align: center;
+    bottom:20px;
+  }
+  p{
+
+    font-family: AvenirNext-Regular;
+    font-size: 16px;
+    color: #515151;
+    letter-spacing: 0.38px;
+    text-align: justify;
+    line-height: 22px;
+
+  }
+  .engine-title{
+    font-size: 16px;text-align:center;
+    position: relative;
+    top:30px;
+  }
+  #title{
+
+    padding: 10px;
+
+    z-index: 999999;
+
+    width:80%;
+    top:10px;
+    /* top: 30%;
+    left:30%; */
+
+
+  }
+  input[type=submit] {
+      background-color: #0A14C5;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      /* SUBMIT: */
+      font-family: HelveticaNeue-Medium;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: 0.75px;
+
+  }
+
+}
 @media screen and (max-width: 600px) {
-    
+
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
     .left-container{
       position: relative;
       width: 100%;
-      height: auto;
-      min-height: auto;
+
+
 
     }
+    .engine-title{
+      font-size: 16px;text-align:center;
+      position: relative;
+      top:30px;
+    }
+    .navbar a{
+      font-size: 16px;
+      padding: 5px 8px;
+
+    }
+
+    #footer{
+
+
+    }
+    .sub-title{
+      position: relative;
+      top:40px;
+
+    }
+
     #title{
       top:80px;
+      padding: 10px;
+
+
+      width:80%;
     }
+
     .right-container{
       position: relative;
       width: 100%;
@@ -279,6 +364,7 @@ input[name=other-option]:focus{
       letter-spacing: 1.5px;
       line-height: 49px;
       text-align: center;
+
     } */
 
     #title{
