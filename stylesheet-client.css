@@ -123,6 +123,9 @@
 
 
   }
+.active{
+  font-weight:bold;
+}
   .navbar a:active{
     font-weight: bold;
 
