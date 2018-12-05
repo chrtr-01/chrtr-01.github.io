@@ -214,6 +214,18 @@
   margin: 0 auto;
 
 }
+#awards{
+  font-family: AvenirNext-Regular;
+  font-size: 14px;
+  color: #515151;
+  letter-spacing: 0.34px;
+  text-align: justify;
+  position: relative;
+  width:60%;
+  margin: 0 auto;
+  margin-top: 80px;
+
+}
 
 
 input[type=submit] {
@@ -348,6 +360,18 @@ input[type=submit]:hover {
 
 
       width:80%;
+    }
+    #awards{
+      font-family: AvenirNext-Regular;
+      font-size: 14px;
+      color: #515151;
+      letter-spacing: 0.34px;
+      text-align: justify;
+      position: relative;
+      width:80%;
+      margin: 0 auto;
+      margin-top: 50px;
+
     }
 
     .right-container{
