@@ -91,7 +91,9 @@
     text-align: center;
   }
 
-
+.navbar a.selected{
+  font-weight:bold;
+}
 
   p{
 
