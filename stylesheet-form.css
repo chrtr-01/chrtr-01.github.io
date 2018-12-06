@@ -1,0 +1,409 @@
+body{
+    margin:0px;
+    font-family: HelveticaNeue-Medium,'Roboto';
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.75px;
+  }
+
+  .left-container{
+    position: fixed;
+    min-height:100vh;
+    width: 40%;
+    top:0px;
+    background-color: #FAFAFA;
+
+    /* padding-bottom: 80px; */
+
+
+  }
+  .right-container{
+    position: absolute;
+    left:40%;
+    min-height:100vh;
+    width:60%;
+    background-color: #ffffff;
+    top:0px;
+  }
+  #logo{
+    width:202px;
+    height:150px;
+    display: block;
+    margin:0 auto;
+  }
+  #title{
+    position: relative;
+    display: block;
+    margin:0 auto;
+    padding: 15px;
+
+    z-index: 999999;
+
+    width:70%;
+    top:100px;
+    /* top: 30%;
+    left:30%; */
+
+
+  }
+  h1{
+    font-family: HelveticaNeue-Bold;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 1.5px;
+    /* line-height: 49px; */
+    text-align: center;
+    /* SURVEY: */
+    position: relative;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    padding: 20px;
+
+
+
+
+  }
+  .sub-title{
+    position: relative;
+    top:70px;
+
+  }
+  .engine-title{
+    font-size: 18px;text-align:center;
+    position: relative;
+    top:70px;
+  }
+  .apply-button{
+    position: relative;
+    text-align: center;
+    top:30px;
+  }
+  #footer{
+    position: absolute;
+    left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+    bottom: 0px;
+    font-family: AvenirNext-Regular;
+    font-size: 18px;
+    color: #515151;
+    letter-spacing: 0.34px;
+    text-align: center;
+  }
+
+  .navbar a.selected{
+    font-weight:bold;
+  }
+
+  p{
+
+    font-family: AvenirNext-Regular;
+    font-size: 20px;
+    color: #515151;
+    letter-spacing: 0.38px;
+    text-align: justify;
+    line-height: 27px;
+
+  }
+  .navbar{
+    overflow: hidden;
+    width: 100%;
+    top:0;
+  }
+  .navbar a{
+
+    font-family: Roboto-light;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #515151;
+    padding: 18px 40px;
+    letter-spacing: 0.34px;
+    text-align: center;
+    display: inline-block;
+
+
+
+
+  }
+  .navbar a:active{
+    font-weight: bold;
+
+  }
+
+  /* .navbar a:hover{
+    background-color: #FAFAFA;
+
+
+
+
+  } */
+
+
+
+
+
+#home-title{
+
+  position: relative;
+  top:70px;
+
+  opacity: 0.9;
+font-family: AvenirNext-DemiBold;
+font-size: 28px;
+color: #575656;
+letter-spacing: 0.89px;
+text-align: center;
+margin-bottom:50px;
+}
+#bmtc-img{
+
+}
+#dtc-img{
+
+  width: 178px;
+  height: 178px;
+
+}
+#check-img{
+
+
+}
+#bmtc-logo{
+  /* width: 128px;
+  height: 128px; */
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  /* padding-top: 50px; */
+  top:100px;
+  text-align: center;
+
+  /* margin: 0 auto; */
+
+}
+#dtc-logo{
+  /* width: 128px;
+  height: 128px; */
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  /* padding-top: 50px; */
+  top:120px;
+  text-align: center;
+
+  /* margin: 0 auto; */
+
+}
+#check-logo{
+  /* width: 128px;
+  height: 128px; */
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  /* padding-top: 50px; */
+  top:150px;
+  text-align: center;
+
+  /* margin: 0 auto; */
+
+}
+#elements{
+
+
+  width:70%;
+  margin: 0 auto;
+
+  opacity: 0.92;
+font-family: AvenirNext-Regular;
+font-size: 16px;
+color: #515151;
+letter-spacing: 0;
+text-align: justify;
+
+}
+#elements-head{
+  opacity: 0.92;
+font-family: AvenirNext-DemiBold;
+font-size: 16px;
+color: #515151;
+letter-spacing: 0.5px;
+text-align: center;
+width:40%;
+margin: 0 auto;
+
+}
+
+
+input[type=submit] {
+    background-color: #0A14C5;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* SUBMIT: */
+    font-family: HelveticaNeue-Medium;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.75px;
+
+}
+
+
+input[type=submit]:hover {
+    background-color: #050C73;
+}
+
+
+
+
+
+
+/* input[name=other-option]:focus{
+      outline: none;
+  }
+  .center-button{
+  text-align: center;
+  margin-top: 30px;
+  } */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  #logo{
+    width:140px;
+    height:100px;
+
+  }
+  .sub-title{
+    position: relative;
+    top:30px;
+
+  }
+  .apply-button{
+    position: relative;
+    text-align: center;
+    bottom:20px;
+  }
+  p{
+
+    font-family: AvenirNext-Regular;
+    font-size: 16px;
+    color: #515151;
+    letter-spacing: 0.38px;
+    text-align: justify;
+    line-height: 22px;
+
+  }
+  .engine-title{
+    font-size: 16px;text-align:center;
+    position: relative;
+    top:30px;
+  }
+  #title{
+
+    padding: 10px;
+
+    z-index: 999999;
+
+    width:80%;
+    top:10px;
+    /* top: 30%;
+    left:30%; */
+
+
+  }
+  input[type=submit] {
+      background-color: #0A14C5;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      /* SUBMIT: */
+      font-family: HelveticaNeue-Medium;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: 0.75px;
+
+  }
+
+}
+@media screen and (max-width: 600px) {
+
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .left-container{
+      position: relative;
+      width: 100%;
+      display: none;
+
+
+
+    }
+    .engine-title{
+      font-size: 16px;text-align:center;
+      position: relative;
+      top:30px;
+    }
+    .navbar a{
+      font-size: 16px;
+      padding: 5px 8px;
+
+    }
+
+    #footer{
+
+
+    }
+    .sub-title{
+      position: relative;
+      top:40px;
+
+    }
+
+    #title{
+      top:80px;
+      padding: 10px;
+
+
+      width:80%;
+    }
+
+    .right-container{
+      position: relative;
+      width: 100%;
+      left:0;
+    }
+    #elements{
+
+
+      width:90%;
+      margin: 0 auto;
+
+      opacity: 0.92;
+    font-family: AvenirNext-Regular;
+    font-size: 16px;
+    color: #515151;
+    letter-spacing: 0;
+    text-align: justify;
+
+    }
+}
+  @media only screen and (max-width:1010px) {
+    /* p{
+      font-family: HelveticaNeue-Bold;
+      font-size: 24px;
+      color: #000000;
+      letter-spacing: 1.5px;
+      line-height: 49px;
+      text-align: center;
+
+    } */
+
+    #title{
+      padding:10px;
+    }
+
+  }
+
