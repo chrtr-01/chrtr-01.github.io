@@ -8,13 +8,11 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
+     <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
   </head>
   <title>Chrtr-Home</title>
 <body>
-
+<div id="left">
     <div class="left-container">
 
       <div id="title">  <img id="logo" src="https://raw.githubusercontent.com/chrtr-01/chrtr-01.github.io/master/chrtr-logo.png"alt="chrtr-logo">
@@ -22,11 +20,12 @@
         Our rides guarantee flexibility on routes, assured seating and travel times of a direct route.<br></p>
         </div>
         <div class="engine-title"><p style="text-align:center"><br>Check out our Engine.</p>
-          <div class="apply-button">
-            <form action="form.html">
-              <input id="submit"type="submit" value="REACH US">
-            </form>
-            </form>
+          <div id="button"class="apply-button">
+
+              <!-- <input id="submit"type="submit" value="REACH US"> -->
+              <button  onclick="myFunction(); ">REACH US</button>
+
+
           </div>
 
         </div>
@@ -35,11 +34,13 @@
 
     </div>
     <div class=""id="footer">
-    <p style="font-size:16px;text-align:center">reach us at <a href="mailto:hello@chartr.in?Subject=Hello%20again!" target="_top">hello@chartr.in</a></p>  </div>
+    <p style="font-size:16px;text-align:center">reach us at <a href="mailto:hello@chartr.in?Subject=Hello%20again!" target="_top">hello@chartr.in</a></p>
+  </div>
 
 
   </div>
-    <div class="container-fluid right-container">
+</div>
+    <div id=""class=" right-container">
       <header>
 
 
@@ -49,8 +50,7 @@
 
           <a class="selected"href="#about">Home</a>
           <a href="/routes.html">Routes</a>
-          <a href="/client.html
-      ">Clients</a>
+          <a href="/client.html">Clients & <br>Awards</a>
           <a href="/about.html">About</a>
 
           </div>
@@ -61,6 +61,7 @@
 
 
         </header>
+        <div id="toggle">
         <p id="home-title">Shared Office <br>Commute</p>
         <div id="route-logo"class="row">
           <div class="col-md-4">
@@ -93,12 +94,84 @@
             <p id="elements">Find a seat, every time.</p>
 
           </div>
-          <div class="row ">
-          <p id="awards">Chartr was recently adjudged as one of the one top startups at the <a href="https://www.google.com/url?q=http://www.call5.impact-karnataka.org&sa=D&ust=1543994016778000&usg=AFQjCNHwueaQbhh78If3qnmYDx_AhKUVmQ"target="_blank">Grand Challenge Karnataka'18</a> for its innovative idea to reduce the traffic congestion problems in Bengaluru.</p>
-        </div>
+
 
         </div>
-        
+        <!-- <div class="row">
+        <p id="awards">Chartr was recently adjudged as one of the one top startups at the <a href="https://www.google.com/url?q=http://www.call5.impact-karnataka.org&sa=D&ust=1543994016778000&usg=AFQjCNHwueaQbhh78If3qnmYDx_AhKUVmQ"target="_blank">Grand Challenge Karnataka'18</a> for its innovative idea to reduce the traffic congestion problems in Bengaluru.</p>
+      </div> -->
+    </div>
+    <div id="form"class="">
+
+      <!-- <form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> -->
+      <form id="survey-form"action="/action_page.php">
+        <div class="container-fluid">
+          <div id="name"class="row">
+            <div class="col-md-12">
+     <div class="col-md-2">
+       <label id="" for="fname name-label">Name:<sup>*</sup></label>
+     </div>
+     <div class="col-md-10">
+       <input type="text" id="fname" name="firstname" style="letter-spacing:1px"placeholder="Enter your name"required>
+     </div>
+   </div>
+   </div>
+
+   <div id="email"class="row">
+     <div class="col-md-12">
+
+     <div class="col-md-2">
+       <label for="lname" id="email-label">E-Mail:<sup>*</sup></label>
+     </div>
+     <div class="col-md-10">
+       <input type="email" id="lname" name="lastname" placeholder="Enter your e-mail"required>
+     </div>
+   </div>
+   </div>
+   <div id="email"class="row">
+     <div class="col-md-12">
+
+     <div class="col-md-2">
+       <label for="lname" id="f-text email-label">Message for us:</label>
+     </div>
+     <div class="col-md-10 ">
+       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+     </div>
+   </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="row">
+
+       <div onclick="myFunction()"class="center-button">
+
+         <input id="submit"type="submit" value="SUBMIT">
+       </div>
+
+   </div>
+  </div>
+      </form>
+  </div>
+
+
 
 
       </div>
@@ -106,6 +179,49 @@
 
     </div>
 
+    <script>
+  //   $(document).ready(function(){
+  //     $("#button").click(function(){
+  //         $(".right-container").hide();
+  //     });
+  //     $("#button").click(function(){
+  //         $("right-container").show();
+  //     });
+  // });
+  function myFunction() {
+      var x = document.getElementById("toggle");
+      var y = document.getElementById("form");
+      var z = document.getElementById("left");
 
+
+      if (x.style.display === "none") {
+
+          x.style.display = "block";
+          y.style.display = "none";
+
+      }
+       else {
+          x.style.display = "none";
+          y.style.display = "block";
+      }
+      
+    }
+
+
+
+
+//   if ($(window).width() < 600) {
+//     function myFunction1() {
+//         var x = document.getElementById("Left");
+//         if (x.style.display === "none") {
+//             x.style.display = "block";
+//
+//         } else {
+//             x.style.display = "none";
+//         }
+//     }
+// }
+
+  </script>
   </body>
 </html>
