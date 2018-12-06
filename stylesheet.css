@@ -1,8 +1,11 @@
+#left{
+    display: block;
+  }
   body{
     margin:0px;
     font-family: HelveticaNeue-Medium,'Roboto';
     font-size: 20px;
-    color: #FFFFFF;
+    color: #515151;
     letter-spacing: 0.75px;
   }
 
@@ -18,11 +21,57 @@
   }
   .right-container{
     position: absolute;
+    display: block;
     left:40%;
     min-height:100vh;
     width:60%;
     background-color: #ffffff;
     top:0px;
+  }
+  #f-text{
+    font-family: AvenirNext-Regular;
+    font-size: 16px;
+    color: #515151;
+    letter-spacing: 0.38px;
+    text-align: justify;
+    line-height: 27px;
+
+
+  }
+  #form{
+    display: none;
+    padding: 40px;
+    width:96%;
+    height: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  input[type=text],input[type=number],input[type=email], textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      background-color: #FAFAFA;
+      color:#515151;
+      letter-spacing:1px
+  }
+  ::placeholder{
+    /* Enter your name: */
+  font-family: HelveticaNeue-Thin;
+  font-size: 16px;
+  color: #515151;
+  letter-spacing: 3px;
+  text-align: justify;
+  }
+  .center-button{
+  text-align: center;
+  margin-top: 30px;
+  display: block;
+  margin: 0 auto;
   }
   #logo{
     width:202px;
@@ -45,6 +94,12 @@
 
 
   }
+  * {
+    box-sizing: border-box;
+}
+sup{
+  color: #945252;
+}
   h1{
     font-family: HelveticaNeue-Bold;
     font-size: 18px;
@@ -211,7 +266,7 @@
   color: #515151;
   letter-spacing: 0.34px;
   text-align: center;
-
+  padding:20px;
   width:50%;
   margin: 0 auto;
 
@@ -363,6 +418,12 @@ input[type=submit]:hover {
 
       width:80%;
     }
+
+    .right-container{
+      position: relative;
+      width: 100%;
+      left:0;
+    }
     #awards{
       font-family: AvenirNext-Regular;
       font-size: 14px;
@@ -375,26 +436,6 @@ input[type=submit]:hover {
       margin-top: 50px;
 
     }
-
-    .right-container{
-      position: relative;
-      width: 100%;
-      left:0;
-    }
 }
-  @media only screen and (max-width:1010px) {
-    /* p{
-      font-family: HelveticaNeue-Bold;
-      font-size: 24px;
-      color: #000000;
-      letter-spacing: 1.5px;
-      line-height: 49px;
-      text-align: center;
 
-    } */
 
-    #title{
-      padding:10px;
-    }
-
-  }
