@@ -60,14 +60,7 @@
 
         // Construct the circle for each value in citymap.
         // Note: We scale the area of the circle based on the population.
-          var mapLabel = new MapLabel({
-          text: 'Test',
-          position: new google.maps.LatLng(12.819719,77.664190),
-          map: map,
-          fontSize: 20,
-          align: 'right'
-        });
-
+        
         for (var city in citymap) {
           // Add the circle for this city to the map.
           var cityCircle = new google.maps.Circle({
